@@ -8,7 +8,7 @@ module.exports=(app)=>{
         console.log(cat_img)
     const add =await new cat({c_name:cat_name,c_desc:cat_desc,c_img:cat_img}).save();
 if(add){
-    res.status(200).json({ success:true,redirectUrl: '/cat'});
+    res.status(200).json({ success:true,redirectUrl: '/insertcat'});
 }
     })
     app.get("/api/category", async (req,res)=>{
@@ -22,7 +22,7 @@ res.send(category)
         const {w_name,w_desc,w_cat,w_price,w_img}=req.body
     const add =await new worker({w_name:w_name,w_desc:w_desc,w_catid:w_cat,w_price:w_price,w_img:w_img}).save();
 if(add){
-    res.status(200).json({ success:true,redirectUrl: '/cat'});
+    res.status(200).json({ success:true,redirectUrl: '/insertworker'});
 }
     })
 

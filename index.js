@@ -61,6 +61,9 @@ const db=mongoose.connect(
 
 // connect to the port 
 const port= process.env.PORT || 5555;
+if (port){
+  console.log("connected to port......"+port)
+}
 const con=app.listen(port)
 
 
