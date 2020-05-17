@@ -1,0 +1,110 @@
+
+/* foot csss starts******************** */
+.foot{
+
+    height:200px;
+    width:100%;
+    margin-top:10px;
+    background-color:#4B4949;
+    opacity:0.9;
+}
+.foot:hover{
+    opacity:0.6;
+}
+
+
+.foot{
+
+
+	background-color: #3D3939;
+	height:500px;
+
+	display: grid;
+	grid-template-rows: 20% 50% 15% 15%;
+
+}
+.foot .f1 {
+
+	margin-left: 150px;
+	margin-right: 150px;
+	
+}
+
+
+.foot .f1  h2{padding-top:8px; color:white;}
+.foot .f2{
+
+display: grid;
+grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5% ;
+margin-left: 150px;
+margin-right: 150px;
+
+}
+.foot .f2 .f21{
+
+
+	display: grid;
+	grid-template-rows: 25% 25% 25% 25%;
+
+}
+
+.foot .f2 .f21 a{
+color: white;
+text-decoration: none;
+
+}
+
+.foot .f3{
+	margin-left: 150px;
+margin-right: 150px;
+margin-top: 5px;
+
+	display:grid;
+	grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%
+}
+
+.foot .f3 a{
+	color: white;
+	text-decoration: none;
+
+}
+
+.foot .f4{
+margin-left: 150px;
+margin-right: 150px;
+
+	color:white;
+}
+/* foot css ends */
+
+
+
+/*  mobile view*/
+
+@media screen and (max-width: 600px) {
+
+    .box{display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 15px;
+
+    }   
+.card{
+
+    width: 15rem
+}
+  .auth{
+
+  }
+
+  .foot .f2{
+
+    display: grid;
+    grid-template-columns: 33% 33.5% 33% ;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+    }
+
+
+}

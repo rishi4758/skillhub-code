@@ -1,0 +1,218 @@
+
+.box1{
+border-radius:20px!important;
+position: absolute;
+
+ width:100%;
+ height:100%;
+  top:10%;
+  left:30%;
+  border-radius:20px!important;
+  box-shadow: grey 5px 5px 5px 5px;
+}
+.log1{
+  
+    
+    height: 100%;
+    width: 100%;
+    
+}
+.blur{
+
+    height: 100%;
+    width: 100%;
+    background:lightgrey;
+    opacity:1;
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  
+    }
+.clobtn:focus{
+    outline: red;
+}
+.loginbtn1{
+   
+    background:linear-gradient(#e66465, #9198e5);
+    border-radius: 5px;
+    font-weight: 700;
+    color:whitesmoke;
+    font-size:18px;
+}
+.regbtn1{
+    background:linear-gradient(#e66465, #9198e5);
+    border-radius: 5px;
+    font-weight: 700;
+    color:whitesmoke;
+    font-size:18px;
+}
+.togbtn1:focus{
+    outline: none;
+}
+.signbtn1{
+    background-color:orangered; 
+    border-radius: 5px;
+}
+
+.google_btn{
+    background-color: red;
+    font-family:ariel;
+    font-size:18px;
+margin-top:0px ;
+color:white;
+ width:200px;
+margin-top:0px;
+font-size:25px;
+width:300px ;
+border-radius:20px ;
+}
+
+.fb_btn{
+    background-color:blue;
+    font-family:ariel;
+    font-size:18px;
+margin-top:0px ;
+color:white;
+ width:200px;
+margin-top:0px;
+font-size:25px;
+width:300px ;
+border-radius:20px ;
+}
+@media screen and (max-width:700px){
+    .google_btn{
+        background-color: red;
+        font-family:ariel;
+        font-size:20px;
+    margin-top:0px ;
+    color:white;
+     width:auto;
+    border-radius:20px ;
+    }
+
+    .fb_btn{
+        background-color:blue;
+        font-family:ariel;
+        font-size:20px;
+    margin-top:0px ;
+    color:white;
+     width:auto;
+    border-radius:20px ;
+    }
+
+    .login-form input[type = "text"], .login-form input[type = "password"] {
+	background-color: maroon;
+        border: none;
+        border-radius: 8px;
+          font-family: 'Raleway', sans-seriff;
+        background-color: gainsboro;
+        padding: 7px;
+    } 
+
+   .box1{
+        height:800px!important;
+        position: absolute;
+     
+          top:10%;
+         left:0%;
+        }
+
+}
+.clobtn:focus{
+    outline: red;
+}
+.loginbtn1{
+    background-color:orangered;
+   
+    border-radius: 5px;
+}
+.signbtn1{
+    background-color:orangered!important; 
+    border-radius: 5px;
+}
+
+.box1 .card{
+    top:2%;
+    left:2%;
+    box-shadow: yellow;
+    width:400;
+    height:300px;
+    position: relative;
+    overflow: hidden;
+}
+.blur{
+   top:0px;
+height: 100%;
+width: 100%;
+
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+position: fixed;
+
+}
+/* login and register starts */
+ 
+
+.loginbtn1{
+    background-color:orangered;
+   
+    border-radius: 5px;
+}
+
+
+
+
+
+a:hover{
+    text-decoration: none;
+
+}
+
+.login-form{
+    margin-top: 10px;
+}
+
+
+
+.login-form input[type = "submit"]:hover {
+    opacity: 0.8;
+   
+}
+.login-form input[type = "text"]:focus, .login-form input[type = "password"]:focus {
+ 	border: 2px #21D4FD solid;
+ }
+.login-form input[type = "text"], .login-form input[type = "password"] {
+	
+	border: none;
+	border-radius: 8px;
+  	font-family: 'Raleway', sans-seriff;
+	background-color: gainsboro;
+	padding: 22px;
+} 
+
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    
+}
+input[type=text]:hover{
+    border:none;
+}
+
+input[type=submit]{
+    border:none;
+    width:200px;
+    height: 40px;;
+    border-radius: 12px;
+    background-color: khaki;
+    color:maroon;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top:25px;
+
+}
+
+
+/*Forrm ends*/

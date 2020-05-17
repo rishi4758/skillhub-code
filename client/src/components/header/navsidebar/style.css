@@ -1,0 +1,154 @@
+/*header starts*/
+.toolbar{
+    background:linear-gradient(#e66465, #9198e5);
+    height:56px;
+}
+/* 
+.toolbar__navigation div  a {
+    color:white
+} */
+
+.header_menu div a{
+    color:white;
+    font-weight: 700;
+    font-size: 20px;
+      
+   
+}
+
+
+.header_menu div  a:hover{
+  background-color: honeydew;
+  width:70px;
+    border-radius: 3px;
+    color:green;
+} 
+
+
+.header_menu{
+  margin-top:9px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.active-purple-2 input[type=text]:focus:not([readonly]) {
+  border-bottom: 5px solid #e5d9e7;
+  box-shadow: 0 1px 0 0 #ce93d8;
+}
+.active-purple .fa, .active-purple-2 .fa {
+  color: #4454dd;
+  font-weight: 700;
+}
+.searchTerm{
+  width: auto;
+  border-radius:8px;
+  margin-top:10px;
+  border-color:  rgb(224, 151, 40);
+  box-shadow: aliceblue 10px;
+}
+
+.searchButton {
+  position: relative;
+  
+  border-radius:8px;   
+    background: rgb(224, 151, 40);
+  top:10px;
+  color: ivory;
+  right:30px;
+
+  }
+  .searchTerm:focus{ outline: none;}
+  .search:focus{ outline: none;}
+  
+  /*Resize the wrap to see the search bar change!*/
+  
+@media screen and (max-width:760px){   
+  /* .searchTerm{
+   
+    width:50px;
+    border-radius:8px;
+    margin-top:10px;
+    border-color:  rgb(224, 151, 40);
+  } */
+      
+  /* .searchButton {
+   
+    position: absolute;
+  
+    border-radius:4px;   
+      background: rgb(224, 151, 40);
+    top:10px;
+    color: ivory;
+    } */
+
+    
+      
+}
+/*header ends*/
+
+/* sidebar starts*/  
+.side-drawer {
+    height: 100%;
+   background: linear-gradient(#e66465, #9198e5);;
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 55%;
+    max-width:400px;  
+    z-index:200;
+    opacity:0.97;
+  }
+  
+  .side-drawer.open {
+    transform: translateX(0);
+  }
+  /*sidebar ends*/
+
+  /* toogle button starts*/
+  .toggle-button {
+      background-color: transparent;
+      outline:none;
+      border: none;
+     margin-left:0px;
+     padding-left: 0px;
+      box-shadow: none;
+  }
+  .toggle-button i {  color:white;
+  }
+      
+  
+  
+  
+  /* toggle utton ends*/
+
+
+  /* sidebar css stqarts*/
+  .side-drawer .mw{
+    background-color:whitesmoke;
+    height:45px;
+    margin-top:5px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px 1px;
+    margin-left:5px;
+    margin-right:5px;
+    text-align:center;
+    cursor: pointer;
+  }
+
+  .side-drawer .mw a{
+  
+  color:black;
+  font-weight: 700;
+  top:3px;
+  font-size:20px;
+  
+  }
+  
+
+  .side-drawer .mw a:hover{
+    font-weight: 700;
+  font-size:30px; 
+  background:white;
+  color:linear-gradient(#e66465, #9198e5);
+  }

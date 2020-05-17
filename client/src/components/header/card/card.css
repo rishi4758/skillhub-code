@@ -1,0 +1,38 @@
+/*card starts*/
+.card {
+    box-shadow: grey 2px 2px 2px 2px;
+    margin-top: 8px; 
+  
+    
+  
+}
+
+
+.need {
+    font-weight:800;
+    background:linear-gradient(#e66465, #9198e5);
+    font-size:20px;
+    outline: none;
+    overflow-x: hidden;
+    width:100%;
+    border:black;
+    border-radius: 8px;
+    cursor: pointer;
+
+   
+}
+.need:hover{
+    
+    font-size:22px;
+  
+
+   
+}
+
+
+@media screen and (max-width:760px){
+
+   
+}
+/*card endss*/
+

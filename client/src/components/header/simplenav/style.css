@@ -1,0 +1,40 @@
+
+body a{
+    text-decoration: none;
+}
+
+
+/*header starts*/
+
+.head{
+
+    background-color: blue;
+}
+
+.head .logo{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+a{
+    color:white;
+    
+    margin-left:25px;
+}
+.head a:hover{
+  background-color: honeydew;
+    border-radius: 3px;
+}
+/*header ends*/
+
+@media screen and (max-width: 725px) {
+    .harami{
+        background-color:red !important;
+        width:50px;
+    }
+
+   
+
+    }   
+
+
+

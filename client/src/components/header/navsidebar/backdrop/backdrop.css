@@ -1,0 +1,10 @@
+.backdrop{
+
+height: 100%;
+width: 100%;
+background:lightgrey;
+opacity:0.9;
+box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+position: fixed;
+z-index:170;
+}
