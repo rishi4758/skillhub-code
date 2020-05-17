@@ -16,7 +16,7 @@ export const insert_cat=(category)=> async dispatch=>{
 
 export const fetchCategory=(category)=> async dispatch=>{
     axios.defaults.withCredentials = true;
-   const res=await axios.get("/api/category")
+   const res=await axios.get("https://infinite-basin-75173.herokuapp.com/api/category")
    console.log(res.data)
    dispatch ({type:FETCH_CAT,payload:res.data})
   
@@ -32,7 +32,7 @@ export const insertWork=(worker)=> async dispatch=>{
 
 export const fetchWorker=(cat_id)=> async dispatch=>{
     console.log(cat_id)
-   const res=await axios.post("http://localhost:5555/api/workerlist",cat_id)
+   const res=await axios.post("https://infinite-basin-75173.herokuapp.com/api/workerlist",cat_id)
    console.log("klmklmsdlkklmkl")
    console.log(res.data)
    dispatch ({type:FETCH_WORKER,payload:res.data})
