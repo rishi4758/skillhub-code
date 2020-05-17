@@ -16,7 +16,7 @@ export const insert_cat=(category)=> async dispatch=>{
 
 export const fetchCategory=(category)=> async dispatch=>{
     axios.defaults.withCredentials = true;
-   const res=await axios.get("http://localhost:5555/api/category")
+   const res=await axios.get("/api/category")
    console.log(res.data)
    dispatch ({type:FETCH_CAT,payload:res.data})
   
