@@ -6,7 +6,7 @@ module.exports=(app)=>{
         console.log(req.body)
         const {cat_img,cat_name , cat_desc}=req.body
         console.log(cat_img)
-    const add =await new worker({c_name:cat_name,c_desc:cat_desc,c_img:cat_img}).save();
+    const add =await new cat({c_name:cat_name,c_desc:cat_desc,c_img:cat_img}).save();
 if(add){
     res.status(200).json({ success:true,redirectUrl: '/cat'});
 }
