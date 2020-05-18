@@ -44,16 +44,16 @@ passport.authenticate('google',{
 }))
 app.get('/auth/google/callback',
 passport.authenticate('google'),
-(req,res)=>res.redirect('http://localhost:3000/')
+(req,res)=>res.redirect('https://infinite-basin-75173.herokuapp.com/home')
 );
 
 // facebook login???????????????????
-app.get('/auth/facebook', passport.authenticate('facebook'));
+// app.get('/auth/facebook', passport.authenticate('facebook'));
 
-app.get('/auth/fb/callback',
-passport.authenticate('facebook'),
-(req,res)=>res.redirect('http://localhost:3000/')
-);
+// app.get('/auth/fb/callback',
+// passport.authenticate('facebook'),
+// (req,res)=>res.redirect('http://localhost:3000/')
+// );
     app.get('/api/user',function(req, res, next) {
      
      res.send(req.user)
