@@ -113,7 +113,8 @@ axios.post("http://localhost:5555/api/login",this.state).then((res)=>{
         <div>  <input type="text" onChange={this.r_email}  name="username" placeholder="Username" required/></div>
 
         <div> <input type="password" name="password"  onChange={this.r_pass}placeholder="Password" required/></div>
-       <div> <input type="submit"  onClick={this.r_login}name="Login" value="Login"/></div>
+       {/* <div> <input type="submit"  onClick={this.r_login} value="Login"/> */}
+      <div><button type="submit" onClick={this.r_login}  value="Login"></button></div>
        </div>
           </div>
                 
