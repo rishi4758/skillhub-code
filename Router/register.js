@@ -59,7 +59,7 @@ passport.authenticate('google'),
      res.send(req.user)
       })
  
-      app.get("/logout",(req,res)=>{
+      app.get("/api/logout",(req,res)=>{
         req.session=null
         res.redirect('/home')
     })
