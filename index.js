@@ -24,7 +24,13 @@ secure: false
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(cors({origin:true,credentials: true}));
-
+// require https
+app.use((req, res, next) => {
+  if (req.hostname !== 'localhost' && req.get('X-Forwarded-Proto') !== 'https') {
+    return res.redirect(`https://${req.hostname}${req.url}`)
+  }
+  return next()
+})
 app.use(bodyParser.json());
 app.use(function(err, req, res, next) {
   console.log(err);

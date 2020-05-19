@@ -61,7 +61,7 @@ passport.authenticate('google'),
  
       app.get("/logout",(req,res)=>{
         req.session=null
-        res.redirect('/')
+        res.redirect('/home')
     })
 }
 
