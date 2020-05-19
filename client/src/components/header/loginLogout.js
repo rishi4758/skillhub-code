@@ -1,5 +1,5 @@
 import React ,{Component} from "react";
-import Axios from "axios";
+import axios from "axios";
 import {Link} from 'react-router-dom'
 import { connect } from "react-redux";
  class Log extends Component{
