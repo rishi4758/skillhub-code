@@ -6,7 +6,7 @@ import { connect } from "react-redux";
  
     login=()=>{
       if(this.props.auth){
-        return <a href="https://infinite-basin-75173.herokuapp.com/api/logout" >Logout</a>
+        return <a href="https://infinite-basin-75173.herokuapp.com/logout" >Logout</a>
       }
       else{
           return <a href ="/login">Login</a>

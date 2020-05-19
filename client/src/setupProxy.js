@@ -7,7 +7,7 @@ module.exports = function(app) {
     app.use(proxy(['/api', '/api/login'], { target: 'https://infinite-basin-75173.herokuapp.com' }));
     app.use(proxy(['/api', '/api/user'], { target: 'https://infinite-basin-75173.herokuapp.com' }));
     app.use(proxy(['/api', '/api/register'], { target: 'https://infinite-basin-75173.herokuapp.com' }));
-    app.use(proxy(['/api', '/api/logout'], { target: 'https://infinite-basin-75173.herokuapp.com' }));
+    app.use(proxy(['/api', '/logout'], { target: 'https://infinite-basin-75173.herokuapp.com' }));
     app.use(proxy(['/api', '/auth/google'], { target: 'https://infinite-basin-75173.herokuapp.com' }));
     app.use(proxy(['/api', '/auth/facebook'], { target: 'https://infinite-basin-75173.herokuapp.com' }));
     app.use(proxy(['/api', '/api/cat'], { target: 'https://infinite-basin-75173.herokuapp.com' }));
