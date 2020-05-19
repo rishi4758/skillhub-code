@@ -61,7 +61,7 @@ passport.authenticate('google'),
  
     app.get("/api/logout",(req,res)=>{
         req.logout();
- res.redirect("http://localhost:3000/")
+ res.redirect("https://infinite-basin-75173.herokuapp.com/")
     })
 }
 
