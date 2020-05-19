@@ -2,7 +2,7 @@ const mongoose=require("mongoose")
 const register=mongoose.model("register")
 const passport = require('passport');
 const genPassword=require("../passport/passwordhash").genPassword
-
+const logout = require('express-passport-logout');
 /* PASSPORT LOCAL AUTHENTICATION */
 module.exports=(app)=>{
 app.post('/api/login', 
@@ -61,6 +61,7 @@ passport.authenticate('google'),
  
     app.get("/api/logout",(req,res)=>{
         req.logout();
+delete req.session;
  res.redirect("https://infinite-basin-75173.herokuapp.com/")
     })
 }
