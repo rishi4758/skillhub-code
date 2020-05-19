@@ -59,10 +59,9 @@ passport.authenticate('google'),
      res.send(req.user)
       })
  
-    app.get("/api/logout",(req,res)=>{
+      app.get("/api/logout",(req,res)=>{
         req.logout();
-delete req.session;
- res.redirect("https://infinite-basin-75173.herokuapp.com/")
+        res.redirect('/')
     })
 }
 
