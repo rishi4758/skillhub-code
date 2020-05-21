@@ -104,7 +104,7 @@ axios.post("https://infinite-basin-75173.herokuapp.com/api/login",this.state).th
         <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
        
        <div className="social" style={{textAlign:"center"}}>
-       <a  href="/auth/google"  className="btn btn-social-icon"><button className="google_btn"><i class=" fa fa-google-plus-official"></i> Sign in with google</button></a>
+<button className="google_btn">       <a  href="/auth/google"  className="btn btn-social-icon"><i class=" fa fa-google-plus-official"></i> Sign in with google </a></button>
 
 {/* <a  href="http://localhost:5555/auth/facebook"  className="btn btn-social-icon"><button className="fb_btn"><i class=" fa fa-facebook"></i> Sign in with Facebook</button></a> */}
 
