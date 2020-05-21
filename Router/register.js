@@ -61,7 +61,10 @@ passport.authenticate('google'),
  
       app.get("/api/logout",(req,res)=>{
         req.session=null
-        res.redirect('/home')
+        return res.status(200).json({
+          success:true,
+          redirect:'/login'   
+        })
     })
 }
 

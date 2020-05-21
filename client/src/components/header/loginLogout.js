@@ -7,8 +7,8 @@ import { connect } from "react-redux";
     axios.defaults.withCredentials = true;
     axios.get("/api/logout").then((res)=>{
       console.log(res)
-    })
-  }
+      window.location=`${res.data.redirect}`
+    })}
     login=()=>{
       if(this.props.auth){return <button onClick={this.logout}> Logout</button>}
       else{

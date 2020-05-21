@@ -82,7 +82,7 @@ axios.post("https://infinite-basin-75173.herokuapp.com/api/login",this.state).th
 <Fragment>
 
 
-
+<Blur/>
 
 <div className="log1">
   <div className=" container ">

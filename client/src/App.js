@@ -21,11 +21,16 @@ this.props.User();
     
          }
 render(){
+  let login;
+  if(!this.props.auth){
+    login=<Login/>
+  }
   
 
   return(
    <Fragment>
       <Header/>
+      {login} 
    
        <BrowserRouter>
        <Route exact path="/" component={Card} exact={true} />
