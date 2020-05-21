@@ -204,7 +204,7 @@ input[type=text]:hover{
     border:none;
 }
 
-input[type=submit]{
+.login_btn{
     border:none;
     width:200px;
     height: 40px;;

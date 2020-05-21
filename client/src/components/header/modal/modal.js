@@ -114,7 +114,7 @@ axios.post("https://infinite-basin-75173.herokuapp.com/api/login",this.state).th
 
         <div> <input type="password" name="password"  onChange={this.r_pass}placeholder="Password" required/></div>
        {/* <div> <input type="submit"  onClick={this.r_login} value="Login"/> */}
-      <div><button type="submit" onClick={this.r_login}  value="Login"></button></div>
+      <div><button className="login_btn" type="submit" onClick={this.r_login}  value="Login">Login</button></div>
        </div>
           </div>
                 
