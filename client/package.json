@@ -30,7 +30,7 @@
     "redux-thunk": "^2.3.0",
     "sass": "^1.26.3",
     "styled-components": "^5.1.0",
-    "swiper": "^5.3.7"
+    "swiper": "^6.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
